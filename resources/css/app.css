@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 50px;   /* lebih besar biar navbar tinggi */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 70px; /* logo lebih besar */
+  }
+  
+  .logo .tagline {
+    font-size: 14px;
+    color: #666;
+    margin-top: 6px;
+  }
+  
+  /* Menu */
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 35px; /* jarak antar menu lebih lega */
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px; /* teks menu lebih besar */
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #0077cc;
+  }
+  
+  /* Button */
+  .btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 28px;   /* lebih besar */
+    text-decoration: none;
+    border-radius: 25px;  /* dibuletin */
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0077cc;
+  }
+  
