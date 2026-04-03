@@ -34,6 +34,7 @@
   </nav>
   <a href="#" class="btn">Contact us now</a>
 </header>
+
 <section class="hero">
   <div class="hero-content">
     <h1>Having troubles on overdue debts or lack enough resources in collecting account receivable?</h1>
@@ -42,5 +43,35 @@
     <div class="highlight">NO SUCCESS NO FEE BASIS</div>
   </div>
 </section>
+
+
+<section class="quote">
+  <div class="profile-container">
+    <img src="{{ asset('/images/palabotak.png') }}" alt="gambar palabotak">
+    <div class="profile-card">
+      <h3>Palabotak</h3>
+      <p>Founder & CEO</p>
+    </div> 
+  </div>
+  
+  <div>
+    <div class="top-quote">
+      <h2>Debt Recovery Indonesia is a service provided by HADS Partnership Law Office established Since 2005.</h2>
+    </div>
+    <div class="highlight-quote">
+      <p>We consist of talented and experienced professional 
+      with a wide range of expertise and experiences.
+      Answering the challenges and demand offset by the
+      increasing needs and complexities services, we consistently and continuously 
+      develop ourself to be the company who provide debt recovery services with practical,
+      legal and effective approach for both national and multinational companies. We commit to provide precise solution,
+      proven strategy and powerful actions in collecting bad debts and receivable.
+      We passionately strive to become your strategic business partner to </p>
+    </div>
+    <div class="bottom-quote">
+      <h2> Maintain Your Cashflow and Protect Your Cash from Bad Customers</h2>
+    </div>
+  </div>
+</section>  
     </body>
 </html>
