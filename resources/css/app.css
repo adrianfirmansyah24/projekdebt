@@ -34,11 +34,11 @@ body {
   
   /* Logo */
   .logo img {
-    height: 70px; /* logo lebih besar */
+    height: 100px; /* logo lebih besar */
   }
   
   .logo .tagline {
-    font-size: 14px;
+    font-size: 20px;
     color: #666;
     margin-top: 6px;
   }

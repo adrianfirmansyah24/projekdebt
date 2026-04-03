@@ -15,10 +15,10 @@
 
     </head>
     <body>
-    <header class="navbar">
-  <div class="logo">
-    <img src="{{ asset('/images/dbt.png') }}" alt="Logo Debt Recovery Indonesia">
-  </div>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="logo">
+         <img src="{{ asset('/images/dbt.png') }}" alt="Logo Debt Recovery Indonesia">
+      </div>
   <nav class="menu">
     <ul>
       <li><a href="#">HOME</a></li>
