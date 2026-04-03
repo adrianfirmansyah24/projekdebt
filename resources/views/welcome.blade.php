@@ -10,6 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbz0g5a2QFh6bK9kN8sNQZl+0n5i5e5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5             crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -31,5 +34,13 @@
   </nav>
   <a href="#" class="btn">Contact us now</a>
 </header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Having troubles on overdue debts or lack enough resources in collecting account receivable?</h1>
+    <h2>A Leading Debt Recovery Solution With The Most Practical, Legal and Effective Approach</h2>
+    <p>We offer the proven solution & strategy to return your money without burden any financial risk for the Company.</p>
+    <div class="highlight">NO SUCCESS NO FEE BASIS</div>
+  </div>
+</section>
     </body>
 </html>
