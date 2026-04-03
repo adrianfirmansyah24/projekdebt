@@ -20,61 +20,117 @@
 
 body {
     font-family: "Inter", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* logo kiri, menu tengah, tombol kanan */
     align-items: center;
     background: #fff;
-    padding: 20px 50px;   /* lebih besar biar navbar tinggi */
+    padding: 20px 40px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
   /* Logo */
-  .logo img {
-    height: 100px; /* logo lebih besar */
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+  .logo img {
+    height: 120px;
+  }
   .logo .tagline {
-    font-size: 20px;
+    font-size: 14px;
     color: #666;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   
   /* Menu */
   .menu ul {
     list-style: none;
     display: flex;
-    gap: 35px; /* jarak antar menu lebih lega */
+    gap: 30px;
+    margin: 0;
+    padding: 0;
   }
-  
   .menu ul li a {
+    font-family:"quicksand", sans-serif;
     text-decoration: none;
-    color: #333;
+    color: #414040;
     font-weight: 600;
-    font-size: 16px; /* teks menu lebih besar */
+    font-size: 20px;
     transition: color 0.3s ease;
   }
-  
   .menu ul li a:hover {
-    color: #0077cc;
+    font-weight: bold;
   }
   
   /* Button */
   .btn {
-    background: #000;
+    background: #272E3A;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
     color: #fff;
-    padding: 12px 28px;   /* lebih besar */
+    padding: 10px 25px;
     text-decoration: none;
-    border-radius: 25px;  /* dibuletin */
-    font-weight: 600;
-    transition: background 0.3s ease;
+    border-radius: 50px;
+    font-family:"quicksand", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+                box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .btn:hover {
+    transform: scale(1.05); /* membesar 5% */
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.4); /* bayangan lebih tegas */
+  }  
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('/public/images/petaduniaabu1.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }  
+
+  .hero-content {
+    position: absolute;        /* teks menimpa gambar */
+    top: 50%;                  /* posisikan di tengah vertikal */
+    left: 50%;                 /* posisikan di tengah horizontal */
+    transform: translate(-50%, -50%); /* benar-benar center */
+    text-align: center;
+    color: #272E3A;
+    max-width: 800px;
+    padding: 20px;
   }
   
-  .btn:hover {
-    background: #0077cc;
+  .hero-content h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .hero-content .highlight {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0077cc;
   }
   
 .section hero {
