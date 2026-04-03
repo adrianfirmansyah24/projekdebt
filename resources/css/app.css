@@ -24,6 +24,11 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between; /* logo kiri, menu tengah, tombol kanan */
     align-items: center;
@@ -111,26 +116,29 @@ body {
   }
   
   .hero-content h1 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
+    font-size: 15px;
+    font-weight: 300;       /* tipis */
+    letter-spacing: 1px;    /* huruf agak renggang */
+    color: #000000;         /* biru tua elegan */
+  }  
   
   .hero-content h2 {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #0077cc; /* biru terang untuk menonjolkan */
   }
   
   .hero-content p {
     font-size: 18px;
     margin-bottom: 25px;
+    color: #444444; /* abu gelap, nyaman dibaca */
   }
   
   .hero-content .highlight {
     font-size: 22px;
     font-weight: 800;
-    color: #0077cc;
+    color: #e63946; /* merah tegas untuk penekanan */
   }
   
 .section hero {
