@@ -133,10 +133,120 @@ body {
     color: #0077cc;
   }
   
-.section hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 50px; /* lebih besar */
-    background: #f9f9f9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quote {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 70px 40px 90px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 85px;
+  background: #efefef;
+}
+
+.profile-container {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.profile-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.profile-card {
+  width: 100%;
+  background: #e9e9e9;
+  padding: 16px 26px 18px;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.profile-card h3 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.profile-card p {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+
+.quote > div:last-child {
+  flex: 1;
+  max-width: 720px;
+  padding-top: 35px;
+  position: relative;
+}
+
+.top-quote h2 {
+  max-width: 700px;
+  font-size: 31px;
+  line-height: 1.25;
+  font-weight: 300;
+  color: #1f1f1f;
+  margin-bottom: 34px;
+}
+
+.highlight-quote {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 22px;
+}
+
+.highlight-quote::before {
+  content: "“";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  font-size: 82px;
+  line-height: 1;
+  font-weight: 700;
+  color: #111;
+}
+
+.highlight-quote p {
+  max-width: 590px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #3f3f3f;
+}
+
+.bottom-quote {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 60px;
+}
+
+.bottom-quote h2 {
+  max-width: 640px;
+  font-size: 29px;
+  line-height: 1.45;
+  font-weight: 300;
+  color: #676767;
+}
+
+.bottom-quote::after {
+  content: "”";
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  font-size: 82px;
+  line-height: 1;
+  font-weight: 700;
+  color: #111;
 }
